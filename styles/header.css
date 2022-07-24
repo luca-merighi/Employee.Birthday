@@ -1,0 +1,70 @@
+.header {
+    background-color: var(--red);
+    padding: 1.5rem 1.5rem 3.5rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+.header .logo {
+    color: var(--white-1);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.date-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.date-container .today-date {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.date-container .today-date img {
+    opacity: 0.75;
+    width: 1.35rem;
+}
+
+.date-container .today-date .date {
+    color: var(--white-2);
+    font-size: 1.15rem;
+    font-weight: 500;
+    opacity: 0.75;
+}
+
+.date-container .birthday-icons-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.date-container .birthday-icons-container.birthday {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media(min-width: 768px) {
+    .header {
+        padding-right: 5rem;
+        padding-left: 5rem;
+        align-items: center;
+    }    
+
+    .date-container {
+        width: 75%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .date-container {
+        width: 50%;
+    }
+}
